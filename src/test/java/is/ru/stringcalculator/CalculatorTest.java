@@ -32,7 +32,9 @@ public class CalculatorTest {
 	public void testNewLineInput(){
 		assertEquals(7, Calculator.add("2\n2,3"));
 	}
-
-
+	@Test
+	public void testAnyDelimiter(){
+		assertEquals(5, Calculator.add("//;\n2;3"));
+	}
 
 }
